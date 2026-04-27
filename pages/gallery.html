@@ -1,0 +1,51 @@
+<!-- Версия для ЛР6: добавлена галерея --><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - My Website</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+            <a href="gallery.html" class="active">Галерея</a>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <h1>Наша галерея</h1>
+        
+        <div class="gallery-main">
+            <img id="mainImage" src="../images/photo1.jpg" alt="Основное изображение">
+        </div>
+        
+        <div class="gallery-thumbnails">
+            <img src="../images/кот1.jpeg" alt="Фото 1" class="thumb active" data-src="../images/кот1.jpeg">
+            <img src="../images/кот2.jpeg" alt="Фото 2" class="thumb" data-src="../images/кот2.jpeg">
+            <img src="../images/кот3.jpeg" alt="Фото 3" class="thumb" data-src="../images/кот3.jpeg">
+            <img src="../images/кот4.jpeg" alt="Фото 4" class="thumb" data-src="../images/кот4.jpeg">
+        </div>
+        
+        <div class="gallery-controls">
+            <button id="prevBtn">← Назад</button>
+            <button id="nextBtn">Вперёд →</button>
+        </div>
+        
+        <p class="gallery-counter">Изображение <span id="currentIdx">1</span> из <span id="totalIdx">4</span></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. Все права защищены.</p>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/gallery.js"></script>
+</body>
+</html>
